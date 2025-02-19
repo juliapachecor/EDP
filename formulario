@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{lipsum}
+\geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\title{\vspace{6cm}\\
+Formulario}
+\author{\\Alumno: Pacheco Rodríguez Julia Danaé}
+\date{\vspace{2mm}\\ 2025}
+\begin{document}
+\vspace*{\fill}
+\begin{center}
+\maketitle
+
+\newpage
+\begin{document}
+
+\vspace*{\fill} % Centrado vertical
+\begin{center} % Centrado horizontal
+    \textbf{\Large Casos de soluciones de ecuaciones diferenciales} % Título principal
+
+    \begin{table}[h]
+        \centering
+        \renewcommand{\arraystretch}{1.5} % Ajuste de espacio en filas
+        \begin{tabular}{|c|p{4cm}|p{5cm}|p{5cm}|}
+            \hline
+            \textbf{Casos} & \textbf{Raíces} & \textbf{Base} & \textbf{Solución General} \\
+            \hline
+            1 & Reales diferentes $\lambda_1, \lambda_2$ & $e^{\lambda_1 x}, e^{\lambda_2 x}$ & $y = c_1 e^{\lambda_1 x} + c_2 e^{\lambda_2 x}$ \\
+            \hline
+            2 & Raíz doble $\lambda = -\frac{a}{2}$ & $e^{-a/2 x}, x e^{-a/2 x}$ & $y = (c_1 + c_2 x) e^{-a/2 x}$ \\
+            \hline
+            3 & Conjugadas complejas $\lambda_1 = -\frac{a}{2} + i\omega$, $\lambda_2 = -\frac{a}{2} - i\omega$ & $e^{-ax/2} \cos(\omega x), e^{-ax/2} \sin(\omega x)$ & $y = e^{-ax/2} (A \cos(\omega x) + B \sin(\omega x))$ \\
+            \hline
+        \end{tabular}
+        \caption{Casos de soluciones de ecuaciones diferenciales}
+    \end{table}
+\end{center}
+\vspace{1cm} % Espacio entre tablas
+
+\begin{center} % Centrado horizontal
+    \textbf{\Large Caso No Homogéneo: Elección de $y_p$} % Título de la segunda tabla
+
+    \begin{table}[h]
+        \centering
+        \renewcommand{\arraystretch}{1.5} % Ajuste de espacio en filas
+        \begin{tabular}{|p{7cm}|p{7cm}|}
+            \hline
+            \textbf{Término No Homogéneo} & \textbf{Elección de $y_p$} \\
+            \hline
+            $k e^{\delta x}, \quad kx^n \quad (n=0,1,2,...)$ & $c e^{\delta x}, \quad k_n x^n + k_{n-1} x^{n-1} + ... + k_0$ \\
+            \hline
+            $k \cos(\omega x), \quad k \sin(\omega x)$ & $k \cos(\omega x) + M \sin(\omega x)$ \\
+            \hline
+            $k e^{\alpha x} \cos(\omega x), \quad k e^{\alpha x} \sin(\omega x)$ & $e^{\alpha x} (k \cos(\omega x) + M \sin(\omega x))$ \\
+            \hline
+        \end{tabular}
+        \caption{Caso No Homogéneo: Elección de $y_p$}
+    \end{table}
+\end{center}
+\vspace*{\fill} % Centrado vertical
+
+
+
+
+\end{document}
